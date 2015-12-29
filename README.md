@@ -1,2 +1,2 @@
-# Ice—Cream-Group-Project
+# Ice Cream Group Project
 Group project for DIG4104
