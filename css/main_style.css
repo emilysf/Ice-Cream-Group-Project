@@ -1,0 +1,462 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/* GLOBAL */
+.navHolder{
+	background-color:#333;
+	height:93px;
+}
+
+.navHolder > li > h3 > a:hover{
+	color:#FC6; /* ffcc66 */
+}
+
+.navHolder > li > h3 > a {
+	font-family: 'Amatic SC', cursive;
+	font-weight:300 !important;
+	color:white;
+	font-size:48px;
+}
+
+.navHolder > li {
+	margin-right:5%;
+	padding:5px;
+}
+
+
+
+/* INDEX.HTML */
+
+.index_nav{
+	margin-top:0px;	
+	padding-top:10px;
+}
+
+.siteName {
+			height:350px;
+			width: 100%; /* 1000px / 1250px */
+			padding: 40px;
+			position: relative;
+			text-align: center;
+			background-color:#fff;
+			background-image:url(../img/background.png);
+			background-repeat:repeat-y;
+			border-bottom:#3CC solid 6px;
+		}
+		
+.siteName > h1{
+	font-family: 'Amatic SC', cursive;
+	font-size:150px;
+	/*color:#F49E9D;*/
+	color: #3CC;
+	font-weight:700;
+	margin-top:0;
+}
+
+.siteName > h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size:75px;
+	/*color:#F49E9D;*/
+	color: #3CC;
+	font-weight:300;
+	margin-top:-10px;
+	}
+
+/* WORLD HTML */	
+	
+.tealBack{ /* World - Teal with Cone Background */
+	width:100%;
+	height:680px;
+	padding-top:2%;
+	background-color:#9CC;
+	background-image:url(../img/background.png);
+	background-repeat:repeat-y;
+}	
+
+.title_world{
+	font-family: 'Amatic SC', cursive;
+	font-size:100px;
+	font-weight:300;
+	color:#3f6e6e /*#568282*/;	
+	text-align:center;
+	margin-bottom:50px;
+	padding-top:6%;
+}
+
+.mapHolder { /* World - GoogleMaps holder */
+	width:auto;
+	height:auto;
+	border-top: #333 solid 4px;
+	border-bottom: #333 solid 4px;
+}
+
+/* FLAVORS HTML */	
+
+.fb{
+	background-image:url(../img/flavorBack.jpg);
+	height:600px;	
+}
+	
+.flavorBack{ /* World - Teal with Cone Background */
+	width:100%;
+	height:630px;
+	padding-top:2%;
+	background-color:#ccf; /*ccf */
+	background-image:url(../img/background.png);
+	background-repeat:repeat-y;
+	border-bottom:#333 solid 3px;
+}
+
+.list{
+	margin-left:-5%;
+	padding-top:25px;
+}
+
+.title_flavors{ /* title of "americas favorite" */
+	font-family: 'Amatic SC', cursive;
+	font-size:100px;
+	font-weight:300;
+	color:#5C3D7A;	
+	text-align:center;
+	margin-bottom:10%;
+	padding-top:8%;
+/*	border: blue solid thin;
+*/}
+
+#flavorList{ /* left side of list */
+	font-family: 'Amatic SC', cursive;
+	font-size:50px;
+	font-weight:300;
+	color:white;	
+	text-align:left;
+	padding-left:50px;
+	line-height:65px;
+}
+
+#flavorList2{ /* right side of list */
+	font-family: 'Amatic SC', cursive;
+	font-size:50px;
+	font-weight:300;
+	color:white;	
+	text-align:left;
+	line-height:65px;
+/*	border: red solid thin;*/
+}
+
+#vanilla:hover, #greentea:hover, #coconut:hover, #strawberry:hover, #chocolate:hover, #mango:hover, #cookie:hover, #redbean:hover, #cookiescream:hover, #mint:hover{ /*list hover */
+	color:#5C3D7A;	
+	text-align:left;
+	padding-left:50px;
+	cursor:pointer;
+}
+
+.white{
+	height:100%;
+	background-color:#F9F9F9;
+	background-image:url(../img/background.png);
+}
+
+
+
+/*Image slider css*/
+.container{
+	width:100%;
+	background-color:hsla(204,80%,80%,1.00);
+}
+
+.cbp-fwslider {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+/*	padding: 40px 0 60px 0px;
+*/	width:100%;
+
+}
+
+.cbp-fwslider ul {
+	margin: 0;
+	padding: 0;
+	/*white-space: nowrap;*/
+	list-style-type: none;
+}
+
+.cbp-fwslider ul li {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	transform: translateZ(0);
+	float: left;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width:100%;
+}
+
+.cbp-fwslider ul li > a,
+.cbp-fwslider ul li > div {
+	display: block;
+	text-align: center;
+	outline: none;
+}
+
+.cbp-fwslider ul li > a img {
+	border: none;
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.cbp-fwslider nav span {
+	position: absolute;
+	top: 50%;
+	width: 40px;
+	height: 100px;
+	/*background: rgb(244, 157, 157); /*color of arrow buttons*/*/
+	color: #fff; /*color of actual arrow*/
+	font-size: 50px;
+	text-align: center;
+	margin-top: -50px;
+	line-height: 100px;
+	cursor: pointer;
+	font-weight: normal;
+}
+
+.cbp-fwslider nav span:hover {
+	background: rgb(244, 157, 157);
+}
+
+.cbp-fwslider nav span.cbp-fwnext {
+	right: 0px;
+}
+
+.cbp-fwslider nav span.cbp-fwprev {
+	left: 0px;
+}
+
+/*.cbp-fwdots {
+	position: absolute;
+	bottom: 0px;
+	white-space: nowrap;
+	text-align: center;
+	width: 100%;
+}*/
+
+/*.cbp-fwdots span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background: #ddd;
+	margin: 4px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.cbp-fwdots span:hover {
+	background: #999;
+}
+
+.cbp-fwdots span.cbp-fwcurrent {
+	background: #47a3da;
+	box-shadow: 0 0 0 2px #47a3da;
+	-webkit-transition: box-shadow 0.2s ease-in-out;
+	-moz-transition: box-shadow 0.2s ease-in-out;
+	transition: box-shadow 0.2s ease-in-out;
+}
+*/
+
+
+
+/* WORLD CSS / GOOGLE MAP */
+
+	.controls {
+        margin-top: 16px;
+        border: 1px solid transparent;
+        border-radius: 2px 0 0 2px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        height: 32px;
+        outline: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      #pac-input {
+        background-color: #fff;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        margin-left: 12px;
+        padding: 0 11px 0 13px;
+        text-overflow: ellipsis;
+        width: 400px;
+		height:35px;
+      }
+
+      #pac-input:focus {
+        border-color: #4d90fe;
+      }
+
+      .pac-container {
+        font-family: Roboto;
+      }
+
+      #type-selector {
+        color: #fff;
+        background-color: #4d90fe;
+        padding: 5px 11px 0px 11px;
+      }
+
+      #type-selector label {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+
+
+
+
+/* MAKING.HTML */
+
+
+
+video { 
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top:0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+
+
+/* MEDIA QUERIES */
+	
+@media (max-width: 1255px) {	
+	
+	.title{
+	font-family: 'Amatic SC', cursive;
+	font-size:80px;
+	font-weight:300;
+	color:white;	
+	text-align:center;
+	}	
+	
+	.navHolder{ /* fixes white bar under navHolder */
+	height:93px;
+	}
+}
+
+@media (max-width: 1220px) {
+
+	ul, ol { /* idk if this works */
+    margin-top: 0px;
+    margin-bottom: 0px !important;
+	}
+
+	.navHolder{ /* fixes white bar under navHolder */
+	height:93px;
+	}
+}
+
+@media (max-width:1199px){
+	.flavorBack{
+		height:1200px;
+	}
+	
+	#flavorList{
+		padding-left:60%;
+	}
+	
+	#flavorList2{
+		padding-left:10%;
+	}
+}
+
+@media (max-width:1100px){
+	
+	.siteName > h1{
+	font-family: 'Amatic SC', cursive;
+	font-size:120px;
+	font-weight:700;
+	}
+	
+	.siteName > h2 {
+	font-family: 'Amatic SC', cursive;
+	font-size:60px;
+	font-weight:300;
+	}	
+}
+
+@media (min-width:766px) and (max-width:890px){
+	.flavorBack{
+		height:1300px;
+	}
+	
+	#flavorList{
+		padding-left:50%;
+	}
+	
+	#flavorList2{
+		padding-left:5%;
+	}
+}
+
+@media (max-width:765px){
+	.flavorBack{
+		height:1050px;
+	}
+	
+	.title{
+		font-size:50px;
+	}
+	
+	#flavorList{
+		padding:0;
+		font-size:45px;
+	}
+	
+	#flavorList2{
+		padding:0;
+		font-size:45px;
+	}
+}
+
+
+@media (max-width:480px){
+	
+	.siteName > h2 {
+    font-family: "Amatic SC",cursive;
+    font-size: 54px;
+    font-weight: 300;
+	}
+	
+	.navHolder > li > h3 > a { /* change when nav is finalized */
+	font-family: 'Amatic SC', cursive;
+	color:white;
+	font-size:25px;
+	padding-left:1px;
+	}
+	
+	.title_flavors{ /* title of "americas favorite" */
+	font-family: 'Amatic SC', cursive;
+	font-size:50px;
+	line-height:40px;
+	}
+	
+}
+
+@media (max-width:420px){	
+	.siteName > h2 {
+    font-size:50px;
+	}
+	
+}
